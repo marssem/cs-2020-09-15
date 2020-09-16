@@ -24,8 +24,8 @@ import com.cs.test.dao.UploadDAOImpl;
 public class FileUploadServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
     private static int ramSize = 100*1024;
-    private static int maxTotalSize = 10 * 1024 * 1024;//업로드 최대용량
-    private static int maxFileSize = 2 * 1024 * 1024;//업로드시 파일 하나당 최대 용량
+    private static int maxTotalSize = 300 * 1024 * 1024;//업로드 최대용량
+    private static int maxFileSize = 300 * 1024 * 1024;//업로드시 파일 하나당 최대 용량
     private UploadDAO upDAO = new UploadDAOImpl();
   
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
